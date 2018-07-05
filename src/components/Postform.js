@@ -33,20 +33,21 @@ class PostForm extends Component {
     render() {
         return (
             <div>
-                <h1>Add Post</h1>
+                <h1 className="addPost">Add Post</h1>
                 <form onSubmit={this.onSubmit}>
                     <div>
-                        <label>Title: </label>
+                        <label className="title">Title: </label>
                         <br />
-                        <input type="text" name="title" onChange={this.onChange} value={this.state.title} />
+                        <input type="text" name="title" className="blogTitle" onChange={this.onChange} value={this.state.title} />
                     </div>
                     <br />
                     <div>
-                        <label>Body: </label><br />
-                        <textarea name="body" onChange={this.onChange} value={this.state.body} />
+                        <label className="body">Body: </label><br />
+                        <textarea name="body" className="blogBody" onChange={this.onChange} value={this.state.body} />
                     </div>
                     <br />
-                    <button type="submit">SUBMIT</button>
+                    <button type="submit" className="postButton">POST</button>
+                    <button type="submit" className="cancelButton">CANCEL</button>
                 </form>
             </div>
         )
