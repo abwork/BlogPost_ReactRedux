@@ -2,12 +2,12 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { fetchPosts} from '../actions/postActions';
 import PropTypes from 'prop-types';
+
 class Posts extends Component {
 
     componentWillMount() {
         this.props.fetchPosts();
     }
-
 
     componentWillReceiveProps(nextProps) {
        if(nextProps.newPost) {
