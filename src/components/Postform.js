@@ -34,7 +34,7 @@ class PostForm extends Component {
         return (
             <div>
                 <h1 className="addPost">Add Post</h1>
-                <form onSubmit={this.onSubmit}>
+                <form onSubmit={this.onSubmit} onReset={this.onReset}>
                     <div>
                         <label className="title">Title: </label>
                         <br />
@@ -46,8 +46,8 @@ class PostForm extends Component {
                         <textarea name="body" className="blogBody" onChange={this.onChange} value={this.state.body} />
                     </div>
                     <br />
-                    <button type="submit" className="postButton">POST</button>
-                    <button type="submit" className="cancelButton">CANCEL</button>
+                    <button type="submit" value="Submit" className="postButton">POST</button>
+                    <button type="cancel" value="Cancel" className="cancelButton">CANCEL</button>
                 </form>
             </div>
         )

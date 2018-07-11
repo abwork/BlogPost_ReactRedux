@@ -15,14 +15,20 @@
   margin-right: 4em;
 }
 
-.addPost {
+.addPost, .postsTitle {
   font-size: 2em;
   font-weight: bold;
   color: goldenrod;
 }
 
-.title, .body  {
+.title, .body {
   font-size: 1em;
+  font-weight: bold;
+  color: rgb(146, 119, 39);
+}
+
+.contentTitle {
+  text-transform: capitalize; 
   font-weight: bold;
   color: rgb(146, 119, 39);
 }
@@ -31,11 +37,12 @@
   width: 600px;
   height: 30px;
   font-size: 1em;
-  color: goldenrod;
+  color: black;
 }
 
 .blogBody {
   width: 600px;
   height: 100px;
   font-size: 1em;
+  color: black;
 }
